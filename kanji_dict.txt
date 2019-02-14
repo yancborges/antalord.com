@@ -1,0 +1,3 @@
+name,strokes,frequency,grade,jlpt
+一,1,2,grade 1,N5
+人,2,5,grade 1,N5

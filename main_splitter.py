@@ -7,12 +7,32 @@ class results:
 	def __init__(self,df,kanji_list):
 		self.df = df
 		self.kanji_list = kanji_list
+		try:
+			self.n5 = [round((self.df.jlpt.value_counts(normalize=True,dropna=False).at['N5'])*100,2),self.df.jlpt.value_counts().at['N5']]
+		except:
+			self.n5 = [0,0]
+		try:
+			self.n4 = [round((self.df.jlpt.value_counts(normalize=True,dropna=False).at['N4'])*100,2),self.df.jlpt.value_counts().at['N4']]
+		except:
+			self.n4 = [0,0]
+		try:
+			self.n3 = [round((self.df.jlpt.value_counts(normalize=True,dropna=False).at['N3'])*100,2),self.df.jlpt.value_counts().at['N3']]
+		except:
+			self.n3 = [0,0]
+		try:
+			self.n2 = [round((self.df.jlpt.value_counts(normalize=True,dropna=False).at['N2'])*100,2),self.df.jlpt.value_counts().at['N2']]
+		except:
+			self.n2 = [0,0]
+		try:
+			self.n1 = [round((self.df.jlpt.value_counts(normalize=True,dropna=False).at['N1'])*100,2),self.df.jlpt.value_counts().at['N1']]
+		except:
+			self.n1 = [0,0]
 
-	def grade(self,normalized):
-		return list(df.grade.value_counts(normalize=normalized))
-
-	def jlpt(self,normalized):
-		return list(df.jlpt.value_counts(normalize=normalized))
+		self.k_n5 = list(self.df.name[self.df.jlpt=='N5'])
+		self.k_n4 = list(self.df.name[self.df.jlpt=='N4'])
+		self.k_n3 = list(self.df.name[self.df.jlpt=='N3'])
+		self.k_n2 = list(self.df.name[self.df.jlpt=='N2'])
+		self.k_n1 = list(self.df.name[self.df.jlpt=='N1'])
 
 def analyse_text(text):
 
@@ -29,10 +49,12 @@ def analyse_text(text):
 	kanji_list = []
 	kanji_names = []
 
+	roman = '1234567890QWERTYUIOPASDFGHJKLÇZXCVBNMqwertyuiopasdfghjklçzxcvbnm'
+
 	for char in text:
 
 		if(char not in punctData):
-			if(char not in hiraganaData and char not in katakanaData):
+			if(char not in hiraganaData and char not in katakanaData and char not in roman):
 				kanji = kanji_scrapper.kanji(char,'','','','')
 				kanji_scrapper.seek(kanji,data)
 				kanji_list.append(kanji)

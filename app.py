@@ -3,9 +3,10 @@
 ################################################################################################################################################
 
 from flask import Flask, flash, request, render_template, redirect, url_for, session, logging
-from wtforms import Form, RadioField, validators, IntegerField, widgets, SelectMultipleField, SelectField
+from wtforms import Form, RadioField, validators, IntegerField, widgets, SelectMultipleField, SelectField, TextAreaField
 from random import shuffle
 import json
+import main_splitter
 
 ################################################################################################################################################
 ################################################################################################################################################ CONFIG
@@ -102,6 +103,9 @@ class form_pokemon(Form):
 	gen_db = get_gen()
 	gen = SelectField( 'Generation wanted: ', [validators.DataRequired()], choices=gen_db )
 
+class form_japanese(Form):
+	text = TextAreaField( 'Input text: ', [validators.DataRequired()])
+
 ################################################################################################################################################
 ################################################################################################################################################ ROUTES
 ################################################################################################################################################
@@ -185,9 +189,17 @@ def poke_gen():
 	else:
 		return render_template('poke-gen.html', form=form,all_poke=all_poke)
 
-@app.route('/apps/japanese-tool', methods=['GET','POST'])
+@app.route('/apps/japanese', methods=['GET','POST'])
 def japanese_tool():
-	print('hey')
+	
+	results = None
+	form = form_japanese(request.form)
+
+	if(request.method == "POST" and form.validate()):
+
+		results = main_splitter.analyse_text(form.text.data)
+
+	return render_template('japanese_tool.html',form=form,results=results)
 
 ################################################################################################################################################
 ################################################################################################################################################ HANDLERS

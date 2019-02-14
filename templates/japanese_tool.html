@@ -8,52 +8,57 @@
     	<form method="POST">
     		<div class="row starter-template">
     			<div class="col-lg-12">
-    				<div class="card text-center">
-  						<div class="card-header">
-    						Anta party generator 1.0
-  						</div>
-  						<div class="card-body">
-    						<h5 class="card-title">Pokemon party generation</h5>
-    						<p class="card-text">Customize your party:</p>
-    						{{render_field(form.gen, class_="form-control")}}
-                <p class="text-muted">You can check all pokemons in each generation <a href="https://bulbapedia.bulbagarden.net/wiki/Core_series">here</a></p>
-    						<input type="submit" class="btn btn-success" value="Generate party!">
-  						</div>
-              {% if all_poke != None %}
-                <div class="card-footer">
-                  <h4>Your party:</h4>
-                  <div class="row">
-                    {% for i in range(6) %}
-                      <div class="col-lg-2">
-                        <img src="{{ img_link ~ all_poke[i]['Name'] ~ '.png'}}">
-                        {{all_poke[i]['Name']}}
-                      </div>
-                    {% endfor %}
-                  </div>
-                </div>
-              {% endif %}
-	  					
+    				<h2>Japanese text analysis tool</h2>
+            <p>Enter the text, and then you will se how difficult is to read it</p>
+            <div class="row">
+            <div class="col-lg-10">
+              {{render_field(form.text, class_="form-control")}}
+              <p>Try it: <mark>いま私の願いごとが  かなうならば翼がほしい  この背中に鳥のように  白い翼つけてください<mark></p>
+            </div>
+            <div class="col-lg-2">
+              <input type="submit" style="height: 80px; margin-top: 15px" class="btn btn-success" value="Analyse it!">
+            </div>
+          </div>
 					</div>
 				</div>
-				<div class="col-lg-12">
-					<h3>About</h3>
-          <p>Since i was a child i love pokemon, and that passion grew when i discovered the nintendo games. And i play then until today!
-            <br/>
-            But, playing the same game for years can be annoying, so taking challenges can make it be fun again.
-            <br/>
-            Sometime ago, i took the <strong>Japanese</strong> version of the game for studying, and so, i decided to play it with challenges
-            for being more fun. This app can help you to play with a surprise pokemon party, and having fun searching for them!
-          </p>
-          <h6>Notes</h6>
-          <ul>
-            <li>Type option is off for now</li>
-            <li>For default, is not possible to have a copy of pokemon in the party (at least for now)</li>
-            <li>For now, only final stages of pokemon (sorry, no full ratata party)</li>
-            <li>For default, pokemons only able to get with by trading are not on the list</li>
-            <li>Also, only 6 member parties too</li>
-            <li>Option of legendaries in the party will be added later, for now they are in (s2 articuno)</li>
-          </ul>
-          <h6 class="text-muted"><i>"Why?" you'd ask.</i> Well, i have to write all data about the pokemons manually. And i'm lazy. So no, no way i'll do that.</h6>
+        {% if results != None %}
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header text-center">
+                  JLPT Data
+                </div>
+                <div class="card-body">
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: {{results.n5[0]}}%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"> {{results.n5[0]}}%</div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: {{results.n4[0]}}%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"> {{results.n4[0]}}%</div>
+                    <div class="progress-bar" role="progressbar" style="width: {{results.n3[0]}}%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{results.n3[0]}}%</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: {{results.n2[0]}}%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{results.n2[0]}}%</div>
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: {{results.n1[0]}}%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">{{results.n1[0]}}%</div>
+                  </div>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-success">N5: {{results.n5[1]}} {{results.k_n5}}</li>
+                  <li class="list-group-item bg-info">N4: {{results.n4[1]}} {{results.k_n4}}</li>
+                  <li class="list-group-item bg-primary">N3: {{results.n3[1]}} {{results.k_n3}}</li>
+                  <li class="list-group-item bg-warning">N2: {{results.n2[1]}} {{results.k_n2}}</li>
+                  <li class="list-group-item bg-danger">N1: {{results.n1[1]}} {{results.k_n1}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+            </div>
+          </div>
+        </div>
+        {% endif %}
+				<hr/>
+        <div class="col-lg-12">
+					<h3>How it works?</h3>
+          <p>This algorithm takes all the kanji in the text and analyse its jtpt level and taugh grade</p>
+          <p>The data is scrapped from <a href="https://jisho.org/">Jisho dictionary</a></p>
+          <p><i>Why not taking each word instead of only kanjis?</i> - Well, japanese its a difficult language, and splitting it by words its hard</p>
+          <p><i>It's good, but i need more data from it...</i> - Nice, i'd be ultra happy to satisfy your japanese study necessities! <a href="http://localhost:5000/work#contact">Contact me!</a></p>
 				</div>
 			</div>
       <hr/>

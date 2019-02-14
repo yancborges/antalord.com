@@ -1,7 +1,6 @@
 import urllib.request
 import pandas as pd
 import writter
-import url_handler
 from urllib.parse import quote_from_bytes, quote
 
 class kanji:
@@ -48,8 +47,10 @@ def load():
 	return kanji_dict
 
 def seek(kanji, kanji_dict):
-	kanji_dict = list(kanji_dict.name)
-	if(kanji.name not in kanji_dict):
+	kanji.scrap()
+	'''
+	kanji_dict_list = list(kanji_dict.name)
+	if(kanji.name not in kanji_dict_list):
 		kanji.scrap()
 		return False
 	else:
@@ -58,5 +59,5 @@ def seek(kanji, kanji_dict):
 		kanji.grade = kanji_dict.ix[kanji.name,3]
 		kanji.jlpt = kanji_dict.ix[kanji.name,4]
 		return True
-
+	'''
 
