@@ -55,10 +55,15 @@ def analyse_text(text):
 
 		if(char not in punctData):
 			if(char not in hiraganaData and char not in katakanaData and char not in roman):
-				kanji = kanji_scrapper.kanji(char,'','','','')
-				kanji_scrapper.seek(kanji,data)
-				kanji_list.append(kanji)
-				kanji_names.append(char)
+				if(char not in kanji_names):
+					try:
+						kanji = kanji_scrapper.kanji(char,'','','','')
+						kanji_scrapper.seek(kanji,data)
+						kanji_list.append(kanji)
+						kanji_names.append(char)
+					except:
+						pass
+						
 
 	kanji_df = kanji_scrapper.load()
 	

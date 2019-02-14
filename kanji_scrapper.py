@@ -34,30 +34,25 @@ class kanji:
 		writter.hey(self.toString(),'kanji_dict.txt','a',True,False)
 		
 def create():
-	try:
-		with open('kanji_dict.txt', 'r') as f:
-			size = len(f.read())
-	except:
-		writter.hey('name,strokes,frequency,grade,jlpt','kanji_dict.txt','w',True,False)
+	with open('kanji_dict.txt', 'r', encoding='utf8') as f:
+		if(len(f.read()) < 1):
+			writter.hey('name,strokes,frequency,grade,jlpt','kanji_dict.txt','w',True,False)
 
 
 def load():
 	kanji_dict = pd.read_csv('kanji_dict.txt')
-	kanji_dict.set_index('name')
 	return kanji_dict
 
 def seek(kanji, kanji_dict):
-	kanji.scrap()
-	'''
+	
 	kanji_dict_list = list(kanji_dict.name)
-	if(kanji.name not in kanji_dict_list):
-		kanji.scrap()
-		return False
+	#writter.hey(kanji_dict_list,'hey.txt','a',True,False)
+	if(kanji.name in kanji_dict_list):
+		kanji.strokes = kanji_dict.ix[kanji_dict.name==kanji.name,1]
+		kanji.frequency = kanji_dict.ix[kanji_dict.name==kanji.name,2]
+		kanji.grade = kanji_dict.ix[kanji_dict.name==kanji.name,3]
+		kanji.jlpt = kanji_dict.ix[kanji_dict.name==kanji.name,4]
 	else:
-		kanji.strokes = kanji_dict.ix[kanji.name,1]
-		kanji.frequency = kanji_dict.ix[kanji.name,2]
-		kanji.grade = kanji_dict.ix[kanji.name,3]
-		kanji.jlpt = kanji_dict.ix[kanji.name,4]
-		return True
-	'''
+		kanji.scrap()
+		
 
