@@ -1,0 +1,32 @@
+{% extends 'layout_fun.html' %}
+
+    {% block body %}
+    <main role="main">
+    	<div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../static/images/myths/{{m['image']}}'" class="myth-bg">
+				<div class="mid-img-text-2 text-center">
+    				<h1>{{m['name']}}</h1>
+    				<p>{{m['subtitle']}}</p>
+    				<p><a href="#origin" class="btn btn-outline-secondary">Origin</a> <a href="#origin" class="btn btn-outline-secondary">Lore</a> <a href="#trivia" class="btn btn-outline-secondary">Trivia</a></p>
+
+    				<h4 id="origin">Origin</h4>
+    				<p>{{m['origin'] | safe}}</p>
+    				<h4 id="lore">Lore</h4>
+    				<p>{{m['lore'] | safe}}</p>
+    				
+    				<h4 id="trivia">Trivia</h4>
+    				<p>{{m['trivia'] | safe}}</p>
+    				
+    			</div>
+    		</div>
+    		
+    	
+    	<div class="container starter-template">
+    		<h3>Refferences:</h3>
+    		{% for ref in m['refferences'] %}
+    			<a href="{{ref['link']}}" class="nav-link">{{ref['name']}}</a>
+    		{% endfor %}
+    		<hr/>
+    	<a href="/myths">Back to myth index</a>
+    	</div>
+    </main>
+    {% endblock %}

@@ -1,0 +1,91 @@
+.anta-bg {
+	background-image: url('../images/anta-bg-2.jpg');
+	background-size: inherit;
+}
+
+.img-resize {
+	size: inherit;
+}
+
+.icon {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+}
+
+.card-imgFix {
+	max-height: 100px;
+	max-width: 100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skip {
+	margin-bottom: 50px;
+}
+
+.hr-fix {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.center-block {
+	text-align: center;
+	padding-top: 3%;
+}
+
+.errorBlock {
+	text-align: center;
+}
+
+.errorBlock-top {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.center-img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anta-bg-yasai {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/vegetables.jpg');
+	background-position: center;
+	min-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mid-img-text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.sr-bg {
+	background-image: url('../images/league-bg.png');
+	background-position: fixed,absolute;
+	size: inherit;
+}
+
+.myth-bg {
+	background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    background-size: cover;
+    position: relative;
+}
+
+.mid-img-text-2 {
+    color: white;
+    left: 50%;
+    padding: 40px;
+}

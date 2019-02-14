@@ -1,0 +1,238 @@
+{% extends 'layout_work.html' %}
+
+    {% block body %}
+    <main role="main" class="container">
+    
+    <div class="starter-template">
+
+    	<div class="row skip" id="whois">
+
+    		<div class="col-lg-5">
+
+    			<h2>Who is AntaLord</h2>
+    			<p>Let me introduce myself, my real name is <strong>Yan Carvalho</strong>,
+    			i am a brazilian developer, graduated in <strong>system analysis and development</strong>.
+    			</p>
+
+    			<p>
+    			This site was made for showing my skills with web development and
+    			publish some of my works.
+    			</p>
+
+    			<p>
+    			If you get interested you can <a href="#contact">contact me!</a>
+    			</p>
+
+    		</div>
+
+    		<div class="col-lg-7">
+    			<img src="../static/images/anta-code.jpg" class="img-resize img-fluid">    			
+    		</div>
+
+    	</div>
+    	
+    	<div class="row" id="skills">
+    		<p>Find my skills in <a href="#langs">languages</a>, <a href="#dbs">data bases</a> or <a href="#fw">frameworks</a></p>
+    	</div>
+    	<div class="row" id="langs">
+    		<div class="col-lg-12">
+    			<h3>Languages</h3>
+    		</div>
+    	</div>
+
+      
+    	<div class="row">
+      {% for lang in langs %}
+    		<div class="col-lg-2">
+    			<div class="card text-center">
+  					<img class="card-img-top card-imgFix" src="../static/images/cards/{{lang[3]}}">
+  					<div class="card-body">
+    					<h4 class="card-text">{{lang[0]}}</h4>
+    					<div class="progress">
+  							<div class="progress-bar" role="progressbar" style="width: {{lang[1]}}%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+  					</div>
+  					<div class="card-footer text-muted">
+    					{% if lang[1] == 0 %}
+                Learning
+              {% elif lang[1] < 30 %}
+                Basic
+              {% elif lang[1] < 60 %}
+                Intermediate
+              {% else %}
+                Advanced
+              {% endif %}
+    					{% if lang[2] == 'F' %}
+                <i class="fa fa-star" title="Favorite one!"></i>
+              {% endif %}
+  					</div>
+				</div>
+		  </div>
+      {% if langs.index(lang) > 5 %}
+          <hr/>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+			
+
+		<hr/>
+
+		<div class="row" id="dbs">
+    		<div class="col-lg-12">
+    			<h3>Data bases</h3>
+    		</div>
+    	</div>
+    	<div class="row">
+
+    		{% for db in dbs %}
+        <div class="col-lg-2">
+          <div class="card text-center">
+            <img class="card-img-top card-imgFix" src="../static/images/cards/{{db[3]}}">
+            <div class="card-body">
+              <h4 class="card-text">{{db[0]}}</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{db[1]}}%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            </div>
+            <div class="card-footer text-muted">
+              {% if db[1] == 0 %}
+                Learning
+              {% elif db[1] < 30 %}
+                Basic
+              {% elif db[1] < 60 %}
+                Intermediate
+              {% else %}
+                Advanced
+              {% endif %}
+              {% if db[2] == 'F' %}
+                <i class="fa fa-star" title="Favorite one!"></i>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+      {% if dbs.index(db) > 5 %}
+          <hr/>
+        {% endif %}
+      {% endfor %}
+		</div>
+
+		<hr/>
+
+		<div class="row" id="fw">
+    		<div class="col-lg-12">
+    			<h3>Frameworks</h3>
+        </div>
+    </div>
+    	<div class="row skip">
+
+    		{% for f in fw %}
+        <div class="col-lg-2">
+          <div class="card text-center">
+            <img class="card-img-top card-imgFix" src="../static/images/cards/{{f[3]}}">
+            <div class="card-body">
+              <h4 class="card-text">{{f[0]}}</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{f[1]}}%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            </div>
+            <div class="card-footer text-muted">
+              {% if f[1] == 0 %}
+                Learning
+              {% elif f[1] < 30 %}
+                Basic
+              {% elif f[1] < 60 %}
+                Intermediate
+              {% else %}
+                Advanced
+              {% endif %}
+              {% if f[2] == 'F' %}
+                <i class="fa fa-star" title="Favorite one!"></i>
+              {% endif %}
+            </div>
+        </div>
+      </div>
+      {% if fw.index(f) > 5 %}
+          <hr/>
+        {% endif %}
+      {% endfor %}		
+		</div>
+
+		<div class="row skip" id="jobs">
+
+			<div class="col-lg-12">
+				<div class="row">
+					<h2>Jobs</h2>
+				</div>
+				<div class="row">
+					<p>Some of my jobs that went online here. check them out!</p>
+				</div>
+
+				<!-- JOBS HERE -->
+
+        <div class="row justify-content-md-center">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../static/images/jobs/comunicapaovale.jpg" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-lg-6">
+              <a href="http:\\comunicapaovale.com.br"><h3>comunicapaovale.com.br</h3></a>
+              <p>This is a small site built in <strong>PHP</strong> with <strong>bootstrap</strong>, Front-end and back-end developed by me.</p>
+              <br/>
+              <p class="text-muted">Comunica Pão is a franchise wich sells advertising in bag of breads. This site was made just for online disclosure of the company.
+              </p>
+            </div>
+          </div>
+          <hr/>
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="../static/images/jobs/Project_monika.png" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col-lg-6">
+              <a href="http:\\projectmonika.pythonanywhere.com"><h3>Project Monika web page</h3></a>
+              <p>This is a page for a project where devs can upload and discuss content about it, it has lots of <strong>MySQL</strong> database connections fro storing content. Back-end and SQL codes developed by me</p>
+              <br/>
+              <p class="text-muted">Project Monika is a project based on <a href="http://ddlc.moe/">Doki Doki Literature Club</a> visual novel, where the goal is create an A.I. for Monika's Character. We use the site for uploading and dicussing things about the project.
+              </p>
+            </div>
+          </div>
+          <h6 class="text-muted center-block">More incoming soon!</h6>
+        </div>					
+      </div>
+
+		</div>
+
+		<div class="row" id="contact">
+
+			<div class="col-lg-12">
+				<div class="row">
+					<h2>Contact</h2>
+				</div>
+				<div class="row">
+					<p>Interested? I can help in your project!</p>
+				</div>
+				<div class="row center-block col-lg-12 justify-content-md-center">
+					<ul class="nav navbar-dark">
+  						<li class="nav-item">
+    						<i class="fa fa-linkedin" title="LinkedIn"></i>
+    						<a class="nav-link" href="https://www.linkedin.com/in/yan-carvalho-borges-576b2a161/"><p>LinkedIn profile</p></a>
+  						</li>
+  						<li class="nav-item">
+    						<i class="fa fa-envelope" title="Gmail"></i>
+    						<a class="nav-link" href="https://www.gmail.com"><p>yan.cborges@gmail.com</p></a>
+  						</li>
+  						<li class="nav-item">
+    						<i class="fa fa-github" title="Github"></i>
+    						<a class="nav-link" href="https://github.com/yancborges"><p>yancborges</p></a>
+  						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+    </div>
+
+    </main>
+
+    {% endblock %}

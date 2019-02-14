@@ -1,0 +1,65 @@
+{% extends 'layout_fun.html' %}
+
+    {% block body %}
+    <main role="main" class="container">
+
+    	{% from "includes/formHelper.html" import render_field %}
+
+    	<form method="POST">
+    		<div class="row starter-template">
+    			<div class="col-lg-12">
+    				<div class="card text-center">
+  						<div class="card-header">
+    						Anta party generator 1.0
+  						</div>
+  						<div class="card-body">
+    						<h5 class="card-title">Pokemon party generation</h5>
+    						<p class="card-text">Customize your party:</p>
+    						{{render_field(form.gen, class_="form-control")}}
+                <p class="text-muted">You can check all pokemons in each generation <a href="https://bulbapedia.bulbagarden.net/wiki/Core_series">here</a></p>
+    						<input type="submit" class="btn btn-success" value="Generate party!">
+  						</div>
+              {% if all_poke != None %}
+                <div class="card-footer">
+                  <h4>Your party:</h4>
+                  <div class="row">
+                    {% for i in range(6) %}
+                      <div class="col-lg-2">
+                        <img src="{{ img_link ~ all_poke[i]['Name'] ~ '.png'}}">
+                        {{all_poke[i]['Name']}}
+                      </div>
+                    {% endfor %}
+                  </div>
+                </div>
+              {% endif %}
+	  					
+					</div>
+				</div>
+				<div class="col-lg-12">
+					<h3>About</h3>
+          <p>Since i was a child i love pokemon, and that passion grew when i discovered the nintendo games. And i play then until today!
+            <br/>
+            But, playing the same game for years can be annoying, so taking challenges can make it be fun again.
+            <br/>
+            Sometime ago, i took the <strong>Japanese</strong> version of the game for studying, and so, i decided to play it with challenges
+            for being more fun. This app can help you to play with a surprise pokemon party, and having fun searching for them!
+          </p>
+          <h6>Notes</h6>
+          <ul>
+            <li>Type option is off for now</li>
+            <li>For default, is not possible to have a copy of pokemon in the party (at least for now)</li>
+            <li>For now, only final stages of pokemon (sorry, no full ratata party)</li>
+            <li>For default, pokemons only able to get with by trading are not on the list</li>
+            <li>Also, only 6 member parties too</li>
+            <li>Option of legendaries in the party will be added later, for now they are in (s2 articuno)</li>
+          </ul>
+          <h6 class="text-muted"><i>"Why?" you'd ask.</i> Well, i have to write all data about the pokemons manually. And i'm lazy. So no, no way i'll do that.</h6>
+				</div>
+			</div>
+      <hr/>
+      <div class="starter-template">
+        <a href="/apps">Back to apps list</a>
+      </div>
+    	</form>
+    </main>
+    {% endblock %}

@@ -1,0 +1,735 @@
+{
+    "generations": [
+        {
+        	"Name": "GENERATION 1",
+        	"ID": "1",
+        	"Link": "https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/",
+        	"Pokemons": [
+        		{
+        			"Name": "venusaur",
+        			"Type": [
+        				{
+        					"Name": "GRASS"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "blastoise",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "charizard",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "butterfree",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "beedrill",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "pidgeot",
+        			"Type": [
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "raticate",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "fearow",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "arbok",
+        			"Type": [
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "raichu",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "sandslash",
+        			"Type": [
+        				{
+        					"Name": "GROUND"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "nidoqueen",
+        			"Type": [
+        				{
+        					"Name": "GROUND"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "nidoking",
+        			"Type": [
+        				{
+        					"Name": "GROUND"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "clefable",
+        			"Type": [
+        				{
+        					"Name": "FAIRY"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "ninetales",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "wigglytuff",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				},
+        				{
+        					"Name": "FAIRY"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "golbat",
+        			"Type": [
+        				{
+        					"Name": "POISON"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "vileplume",
+        			"Type": [
+        				{
+        					"Name": "GRASS"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "parasect",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				},
+        				{
+        					"Name": "GRASS"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "venomoth",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "dugtrio",
+        			"Type": [
+        				{
+        					"Name": "GROUND"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "persian",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "golduck",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "primeape",
+        			"Type": [
+        				{
+        					"Name": "FIGHTING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "arcanine",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "poliwrath",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "FIGHTING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "victreebel",
+        			"Type": [
+        				{
+        					"Name": "GRASS"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "tentacruel",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "rapidash",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "slowbro",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "magneton",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				},
+        				{
+        					"Name": "STEEL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "farfetchd",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "dodrio",
+        			"Type": [
+        				{
+        					"Name": "FLYING"
+        				},
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "dewgong",
+        			"Type": [
+        				{
+        					"Name": "ICE"
+        				},
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "muk",
+        			"Type": [
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "cloyster",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "ICE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "onix",
+        			"Type": [
+        				{
+        					"Name": "ROCK"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "hypno",
+        			"Type": [
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "kingler",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "electrode",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "exeggutor",
+        			"Type": [
+        				{
+        					"Name": "GRASS"
+        				},
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "marowak",
+        			"Type": [
+        				{
+        					"Name": "GROUND"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "hitmonlee",
+        			"Type": [
+        				{
+        					"Name": "FIGHTING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "hitmonchan",
+        			"Type": [
+        				{
+        					"Name": "FIGHTING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "lickitung",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "weezing",
+        			"Type": [
+        				{
+        					"Name": "POISON"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "rhydon",
+        			"Type": [
+        				{
+        					"Name": "ROCK"
+        				},
+        				{
+        					"Name": "GROUND"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "chansey",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "tangela",
+        			"Type": [
+        				{
+        					"Name": "GRASS"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "kangaskhan",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "seadra",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "seaking",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "starmie",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "mr-mime",
+        			"Type": [
+        				{
+        					"Name": "PSYCHIC"
+        				},
+        				{
+        					"Name": "FAIRY"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "scyther",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "jynx",
+        			"Type": [
+        				{
+        					"Name": "ICE"
+        				},
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "electabuzz",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "magmar",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "pinsir",
+        			"Type": [
+        				{
+        					"Name": "BUG"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "tauros",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "gyarados",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "lapras",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "ICE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "ditto",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "vaporeon",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "jolteon",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "flareon",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "porygon",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "omastar",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "ROCK"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "kabutops",
+        			"Type": [
+        				{
+        					"Name": "WATER"
+        				},
+        				{
+        					"Name": "ROCK"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "aerodactyl",
+        			"Type": [
+        				{
+        					"Name": "ROCK"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "snorlax",
+        			"Type": [
+        				{
+        					"Name": "NORMAL"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "articuno",
+        			"Type": [
+        				{
+        					"Name": "ICE"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "zapdos",
+        			"Type": [
+        				{
+        					"Name": "ELECTRIC"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "moltres",
+        			"Type": [
+        				{
+        					"Name": "FIRE"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "dragonite",
+        			"Type": [
+        				{
+        					"Name": "DRAGON"
+        				},
+        				{
+        					"Name": "FLYING"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "mewtwo",
+        			"Type": [
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		},
+        		{
+        			"Name": "mew",
+        			"Type": [
+        				{
+        					"Name": "PSYCHIC"
+        				}
+        			]
+        		}
+        	]
+        }
+    ]
+}

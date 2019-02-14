@@ -1,0 +1,36 @@
+{
+    "myths": [
+        {
+            "name": "Yatagarasu",
+            "image": "yatagarasu.jpg",
+            "subtitle": "The three-legged crow",
+            "origin": "The myth of <strong>Yatagarasu</strong> is not restricted to japan, but the first mention of this bird was in Chinese mythology. Called as 'Golden bird' in chinese, for them it is the one of the 10 crows that used to live in stars like our sun. Is belivied in Japan that this crow means divine intervention and blessings.",
+            "lore": "Looking for a better homeland, the clan of the emperor Jimmu crossed Japan fighting for territory. They were loosing a lot of battles, until Jimmu notices that they were lossing because they were fight against the ray lights of sun. Seeing that people lost, <a href='amaterasu'>Amaterasu</a>, the god of sun, ordered to <a href='kamo-taketsunumi'>Kamo Taketsunumi</a> to guide Jimmu, and he took a form of a giant crow to lead Jimmu through the mountains until Yamato, where were the first capital of Japan and Jimmu became the first emperor.",
+            "trivia": "This bird was used a lot in the pop culture, like Yu-gi-oh where there is a card for him. And there is actually a Temple for him in Japan. <a href='http://www.yatagarasujinja.net/goyuisyo.htm'>Check it</a>. <br/> Also there is a pokemon (Yveltal) described as a crow with 3 legs.",
+            "refferences": [
+            	{
+            		"name": "The legend of yatagarasu - Heritage of japan",
+            		"link": "https://heritageofjapan.wordpress.com/2011/08/22/yatagarasu-the-three-legged-crow-and-its-possible-origins/"
+            	},
+            	{
+            		"name": "Yatagarasu - Youkai",
+            		"link": "http://yokai.com/yatagarasu/"
+            	}
+            ]
+        },
+        {
+            "name": "Baku",
+            "image": "baku.jpg",
+            "subtitle": "The dream eater",
+            "origin": "Baku was originated in the Chinese folklore, as a creature able to eat the nightmares from people who pray for him. Sometime later, he appeared in Japanese mythology also as a Youkai in the Muromachi period. Is said that he was created by the gods with the remeaning part of other animals.",
+            "lore": "Baku is a spirit composed with parts of different animals: Body of bear, nose of elephant (or anta in some interpratations), feet of tiger, tail of ox and eyes of rhinoceros.<br/> Baku is a spirt that is able to eat bad dreams, if you wake in the middle of night, you can summon him saying 'Baku-san, come to eat my dream' three times, and maybe he will come to you. But be careful, when he's summoned, he needs to be satisfied, if only the dream doesn't, he will eat your hopes and dreams too.",
+            "trivia": "Baku is very popular in nowdays in arts and comics. The pokemon <strong>Drowzee</strong> is a represantations of baku, reason why he's on our <a href='/SeeIsAErrorPage'>Error page</a>.'",
+            "refferences": [
+                {
+                    "name": "Baku: The legend of the dream eater | Ancient origins",
+                    "link": "https://www.ancient-origins.net/myths-legends-asia/baku-legend-dream-eater-002383"
+                }
+            ]
+        }
+    ]
+}

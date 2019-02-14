@@ -1,0 +1,57 @@
+{% extends 'layout_fun.html' %}
+
+    {% block body %}
+    <main role="main" class="container">
+
+    	{% from "includes/formHelper.html" import render_field %}
+
+    	<form method="POST">
+    		<div class="row starter-template">
+    			<div class="col-lg-4">
+    				<div class="card text-center">
+  						<div class="card-header">
+    						Anta conversor 1.0
+  						</div>
+  						<div class="card-body">
+    						<h5 class="card-title">Get your values!</h5>
+    						<p class="card-text">The easiet way to get diegão and joão zika values in the internet!</p>
+    						<div class="text-left">
+	    						{{render_field(form.value, class_="form-control")}}
+    							{{render_field(form.options, class_="form-check")}}
+    						</div>
+    						<input type="submit" class="btn btn-success" value="Convert!">
+  						</div>
+	  					{% if result %}
+  							<div class="card-footer text-muted">
+    							{% if result[0] %}
+    								<p>Diegão value: {{result[0]}}</p>
+    							{% endif %}
+    							{% if result[1] %}
+    								<p>João zika value: {{result[1]}}</p>
+    							{% endif %}
+  							</div>
+  						{% endif %}
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<h3>About</h3>
+					<p>Once upon a time, playing league of legends with some friends, we played a 5x5 match,
+					where <strong>Dieguitos PDLN</strong> were one of the junglers, as xin zhao. That was really fun,
+					but in the end of the game, we noticed that he dealt such a pathethic damage to enemy champions,
+					exactly <strong>3730</strong> points of damage in a whole 40 minutes game. And then born the meme.
+					<br/><br/>
+					Some time later, we called a random guy to play with us, his name was <strong>lord jozao zika 2</strong>, also playing as
+					jungler, with gragas full ap. And we could deal even less damage then Diegão, almost a half.
+					<br/><br/>
+					There is a video with the hightlights of the game on youtube, you can check it out <a href="https://www.youtube.com/watch?v=kMHg_lvTIoM">here</a>, i was rakan.
+					</p>
+					<img src="../static/images/diegao.png" class="img-fluid">
+				</div>
+			</div>
+      <hr/>
+      <div class="starter-template">
+        <a href="/apps">Back to apps list</a>
+      </div>
+    	</form>
+    </main>
+    {% endblock %}

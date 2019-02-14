@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<script src="../static/js/bootstrap.js"></script>
+  		<script src="../static/js/jquery.js"></script>
+  		<link rel="stylesheet" href="../static/css/bootstrap.css">
+  		<link rel="stylesheet" href="../static/css/custom.css">	
+  		<link rel="stylesheet" href="../static/css/font-awesome.min.css">	
+
+
+	</head>
+	<meta charset="utf-8">
+	<title>Let's work</title>
+	<body>
+	  	{% include 'includes/navbar_work.html' %}
+	  	
+	  	<div class="flashes">
+	  		{% include 'includes/flash_messages.html' %}
+	  	</div>
+	  	
+	  	{% block body %}{% endblock %}
+
+	  	{% include 'includes/footer_work.html' %}
+	</body>
+</html>
