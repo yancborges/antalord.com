@@ -3,7 +3,7 @@
 
 ### Last updates:
 
-- Japanese text analyser (14/02/19)
+- Implemented [Online portifolio](http://antalord.pythonanywhere.com/apps/japanese) (16/02/19)
 
 ### Future updates:
 
