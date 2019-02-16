@@ -74,6 +74,7 @@ def get_gen():
 	data = json.load(file_json)
 	
 	gen_table = []
+	file_json.close()
 	for gen in data['generations']:
 		gen_table.append((gen['ID'],gen['Name']))
 	return gen_table
@@ -83,6 +84,7 @@ def get_genID(value):
 	data = json.load(file_json)
 	
 	gen_table = []
+	file_json.close()
 	for gen in data['generations']:
 		if(gen["ID"] == value):
 			return gen
