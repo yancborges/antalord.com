@@ -24,7 +24,6 @@
 				</div>
         {% if results != None %}
         <div class="row">
-          <div class="col-lg-12">
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header text-center">
@@ -49,8 +48,26 @@
               </div>
             </div>
             <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header text-center">
+                  Mean difficult:
+                </div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <h2 class="card-title text-center">{{results.n_mean()}}</h2>
+                    </li>
+                    <li class="list-group-item">
+                      <strong>Important!</strong>
+                      <p>This is just a very dirty view of this text level. This algorithm does not counts grammar and the kanji as words.
+                        So, you can try to read it, even if it was classified as N1 and you're N5.
+                        This is just for trying save your time when choosing what text to study.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
         {% endif %}
 				<hr/>

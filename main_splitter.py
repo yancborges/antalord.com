@@ -33,6 +33,33 @@ class results:
 		self.k_n3 = list(self.df.name[self.df.jlpt=='N3'])
 		self.k_n2 = list(self.df.name[self.df.jlpt=='N2'])
 		self.k_n1 = list(self.df.name[self.df.jlpt=='N1'])
+		self.mean = None
+
+	def n_mean(self):
+
+		series = self.df.jlpt.value_counts(sort=True)
+		mean_value = series.sum()/series.count()
+		start = 0
+		last = 0
+		count = 0
+		stop = 0
+		#levels = ['N5','N4','N3','N2','N1']
+		levels = ['N1','N2','N3','N4','N5']
+		while(count < 5):
+			try:
+				start += series[levels[count]]
+				print(start,last)
+				if(mean_value >= last and mean_value < start):
+					stop = count
+					break
+				last += series.at[levels[count]]
+			except:
+				pass
+			count += 1
+		self.mean = levels[stop]
+		return levels[stop]
+
+			
 
 def analyse_text(text):
 
