@@ -3,9 +3,8 @@
 
 ### Last updates:
 
-- Implemented [Online portifolio](http://antalord.pythonanywhere.com/apps/japanese) (16/02/19)
+- Implemented [Japanese text Analyser](http://antalord.pythonanywhere.com/apps/japanese) (16/02/19)
 
 ### Future updates:
 
-- Thinking...
-
+- Chaos JavaScript Page
